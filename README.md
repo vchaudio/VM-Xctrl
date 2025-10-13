@@ -54,3 +54,6 @@ A key advantage is that you can run the X-Touch in **XCtrl/MCU mode**, keeping *
 4. Assign X-Touch IP
 5. Assign PC IP on X-Touch (hover your mouse on the tray icon, it will show you your IP)
 6. Control Voicemeeter directly from your X-Touch.
+
+Get your Licence Key
+https://vchaudio.gumroad.com/l/VM-XCtrl

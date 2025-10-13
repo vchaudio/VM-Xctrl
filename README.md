@@ -4,15 +4,11 @@
 **VM-XCtrl** bridges the **Behringer X-Touch** control surface with **VB-Audio Voicemeeter**, providing tactile control, visual feedback, and powerful layer-based mixing.  
 It communicates via **UDP** in **XCtrl mode**, using the **Voicemeeter API** to synchronize faders, buttons, displays, and meters.
 
----
-
 ## Overview
 VM-XCtrl maps the X-Touch’s **faders, buttons, encoders, and scribble displays** directly to Voicemeeter’s parameters.  
 You get hands-on mixing, real-time feedback, and advanced features like AUX (send) control, preset recall, and media transport — all from your X-Touch.
 
 A key advantage is that you can run the X-Touch in **XCtrl/MCU mode**, keeping **Voicemeeter** on one layer and your **DAW or other software** on another, easily switched via the **SMPTE** button.
-
----
 
 ## Features
 - Two main layers:  
@@ -42,14 +38,14 @@ A key advantage is that you can run the X-Touch in **XCtrl/MCU mode**, keeping *
 - **Solo feedback:** when a channel is soloed, other mute LEDs blink — identical to Voicemeeter’s visual behavior.  
 - **Layer display:** in single XCtrl mode, the display shows the current layer name (Bars, Beats, Subdivision, or Ticks fields repurposed).
 
----
+## Video Preview
+
+[![Video Preview](https://img.youtube.com/vi/OcrzrS9EKOE/0.jpg)](https://www.youtube.com/watch?v=OcrzrS9EKOE)
 
 ## Requirements
 - **VB-Audio Voicemeeter** (Potato - 3.1.1.9 / Banana - 2.1.1.9 / or higher)  
 - **Behringer X-Touch** (XCtrl / XCtrl-MCU / XCtrl-HUI mode)  
 - **UDP network access** — PC and X-Touch must be on the same local network
-
----
 
 ## Getting Started
 1. Connect your **Behringer X-Touch** in **XCtrl** mode.  

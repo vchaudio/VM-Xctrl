@@ -58,5 +58,8 @@ A key advantage is that you can run the X-Touch in **XCtrl/MCU mode**, keeping *
 Get your Licence Key
 https://vchaudio.gumroad.com/l/VM-XCtrl
 
-Leave Feedback and stay tuned in the official Discord server 
+
+**Become a tester and get your lifetime key for free!**
+Leave Feedback and stay tuned on the official Discord server 
 [https://discord.gg/DzCBwq2e](https://discord.gg/jyh8bSUev7)
+

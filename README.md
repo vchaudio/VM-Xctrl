@@ -10,7 +10,7 @@ You get hands-on mixing, real-time feedback, and advanced features like AUX (sen
 
 A key advantage is that you can run the X-Touch in **XCtrl/MCU mode**, keeping **Voicemeeter** on one layer and your **DAW or other software** on another, easily switched via the **SMPTE** button.
 
-## Features
+## Features v.1.0
 - Two main layers:  
   - **Input Layer** controls Voicemeeter strips (channels)  
   - **Output Layer** controls buses  

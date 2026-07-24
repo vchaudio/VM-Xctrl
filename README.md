@@ -62,5 +62,5 @@ https://vchaudio.gumroad.com/l/VM-XCtrl
 
 
 Leave Feedback and stay tuned on the official Discord server 
-[https://discord.gg/DzCBwq2e](https://discord.gg/jyh8bSUev7)
+[[https://discord.gg/DzCBwq2e](https://discord.gg/jyh8bSUev7)](https://discord.gg/TxMyxPkBxw)
 

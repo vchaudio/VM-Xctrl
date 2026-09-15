@@ -63,7 +63,7 @@ VM-XCtrl supports three X-Touch operating modes:
 - **XCtrl / HUI**
 
 >[!WARNING]
->**Some functionality is exclusive to XCtrl mode due to hardware limiting capabilities**
+>**Some functionality is exclusive to XCtrl mode due to hardware limitations**
 
 ---
 
@@ -111,8 +111,7 @@ VM-XCtrl is built around a multi-layer mixing workflow
         <li>Assign input sends to VoiceMeeter outputs</li>
         <li>Adjust send amount directly with the fader</li>
         <li><strong>Main Fader</strong> can control all sends</li>
-        <li><strong>Absolute</strong> and <strong>Relative</strong> send modes</li>
-        <li><strong>FLIP</strong> switches between modes, matching native VoiceMeeter behavior</li>
+        <li><strong>FLIP</strong> switches between <strong>Absolute</strong> and <strong>Relative</strong> modes, matching native VoiceMeeter behavior</li>
       </ul>
   </br>
     </td>
@@ -123,10 +122,10 @@ VM-XCtrl is built around a multi-layer mixing workflow
       </p>
       <ul>
         <li>Dedicated Windows Application Layer, independent from the VoiceMeeter API</li>
-        <li>Dynamically detects active Windows applications with audio</li>
+        <li>Dynamically detects active Windows applications</li>
         <li>Mute, Volume and percentage control</li>
-        <li>Change output devices globally/default or per application in real time</li>
-        <li><strong>Instant</strong> or <strong>Confirm</strong> device switching modes</li>
+        <li>Change Default output device or per application in real time</li>
+        <li><strong>Instant</strong> or <strong>Confirm</strong> output device switching modes</li>
         <li>Short and full device names, with customizable short names for active or disconnected devices</li>
       </ul>
   </br>
@@ -151,7 +150,7 @@ VM-XCtrl is built around a multi-layer mixing workflow
 
 ### 🎚️ Main Fader
 
-- The 9th / Main Fader can be reassigned in real time with `ALT + <Channel>` On the SEND layer, it can control either the selected input send or the overall send level. It can also be disabled on the OUTPUT layer when not needed.
+- The 9th / Main Fader can be reassigned in real time with `ALT + <Channel>` on all layers. On the SEND layer, it can control either the selected input send or the overall send level. It can also be disabled on the OUTPUT layer when not needed.
 
   </tr>
   <tr>
@@ -162,18 +161,19 @@ VM-XCtrl is built around a multi-layer mixing workflow
 - Customize screen colors for each VM-XCtrl layer.
 - Display channel names and live volume values.
 - Configurable VU meter response speed.
-- Channels can be fully or partially disabled when the corresponding VoiceMeeter input or bus has no custom label, similar to VoiceMeeter Streamer View.
+- Channels can be fully or partially disabled when the corresponding VoiceMeeter input or bus has no custom label, similar to VoiceMeeter Streamer View functionality.
 
     </td>
   </tr>
   <tr>
+    
     <td width="100%" valign="top">
-
 ### 📻 Transport & Media Control
 
 - The X-Touch transport controls provide Windows multimedia control:
   - **Previous · Next · Stop · Play**
 - ❗ In **XCtrl / Mackie** and **XCtrl / HUI**, these controls are located in the **AUTOMATION** section
+  - **Touch · Latch · Write · Read/Off**
 
   </tr>
   <tr>
@@ -197,9 +197,9 @@ VM-XCtrl is built around a multi-layer mixing workflow
 - XCtrl mode provides additional functionality built specifically around the X-Touch hardware.
   - **TIMECODE** displays the current media position and active VM-XCtrl layer.
   - **JOG** wheel scrubs through music, video and audio by seconds.
-  - **NUDGE + JOG** allows quick 5–10 second video jumps, similar to `J` / `K` in YouTube.
+  - Press **NUDGE** to make the JOG Wheel allow quick 5–10 second video jumps, similar to `J` / `K` in YouTube.
   - Multiple media capture modes are available, including classic Windows media targeting and **FOCUS** mode.
-  - In FOCUS mode, pressing **SOLO** can force media control to the currently focused window.
+  - Pressing **SOLO** can force media control to the currently focused window.
 
     </td>
   </tr>
@@ -224,11 +224,11 @@ VM-XCtrl is built around a multi-layer mixing workflow
 VM-XCtrl is designed as a preconfigured, ready-to-work application rather than a collection of manual mappings.
 
 - Automatic connection and reconnection when VoiceMeeter or the X-Touch is restarted.
-- Connection state is reflected on the X-Touch.
+- Disconnect state (Issue) is reflected on the X-Touch.
 - Windows autostart and automatic updates.
 - Console and function customization.
 - Left-clicking the tray icon provides VM-XCtrl status information.
-- Automatic support for future compatible VoiceMeeter releases.
+- Support for future compatible VoiceMeeter releases.
 
 ## 🔐 Requirements
 
@@ -249,7 +249,7 @@ VM-XCtrl is designed as a preconfigured, ready-to-work application rather than a
 
 ## 💫 Future Expansion
 >[!WARNING]
->The current **VM-XCtrl CORE** will continue to expand with additional functionality.
+>The current **VM-XCtrl Core** will continue to expand with additional functionality.
 Larger future features may also be released as separate paid add-ons when they **EXTEND VM-XCtrl beyond direct VoiceMeeter** operation.
 
 ## 📋 License

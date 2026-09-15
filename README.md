@@ -11,9 +11,9 @@
 
 <p align="center">
   <a href="https://github.com/vchaudio/VM-XCtrl/releases"><img src="https://img.shields.io/github/v/release/vchaudio/VM-XCtrl?style=for-the-badge&label=Release&labelColor=172B3A&color=FF5A1F&logo=github&logoColor=white"></a>
-  <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-FF5A1F?style=for-the-badge&logo=windows&logoColor=white&labelColor=172B3A">
-  <img src="https://img.shields.io/badge/Connection-LAN-3D8BC9?style=for-the-badge&labelColor=172B3A">
-  <img src="https://img.shields.io/badge/License-Proprietary%20%2F%20Commercial-FACC15?style=for-the-badge&labelColor=172B3A">
+  <a href="#-requirements"><img src="https://img.shields.io/badge/Windows-10%20%7C%2011-FF5A1F?style=for-the-badge&logo=windows&logoColor=white&labelColor=172B3A"></a>
+  <a href="#-requirements"><img src="https://img.shields.io/badge/Connection-LAN-3D8BC9?style=for-the-badge&labelColor=172B3A"></a>
+  <a href="#-license"><img src="https://img.shields.io/badge/License-Proprietary%20%2F%20Commercial-FACC15?style=for-the-badge&labelColor=172B3A"></a>
 </p>
 
 <p align="center">

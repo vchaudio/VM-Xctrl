@@ -174,7 +174,7 @@ VM-XCtrl is built around a multi-layer mixing workflow
   - **Previous · Next · Stop · Play**
 - ❗ In **XCtrl / Mackie** and **XCtrl / HUI**, these controls are located in the **AUTOMATION** section
   - **Touch · Latch · Write · Read/Off**
-
+>
   </tr>
   <tr>
     <td width="100%" valign="top">

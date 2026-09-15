@@ -1,56 +1,272 @@
-# VM-XCtrl  
-**Voicemeeter ↔ Behringer X-Touch Bridge**
+# VM-XCtrl
 
-**VM-XCtrl** bridges the **Behringer X-Touch** control surface with **VB-Audio Voicemeeter**, providing tactile control, visual feedback, and powerful layer-based mixing.  
-It communicates via **UDP** in **XCtrl mode**, using the **Voicemeeter API** to synchronize faders, buttons, displays, and meters.
+<p align="center">
+  <img width="3840" height="1098" alt="VM-XCtrl" src="https://github.com/user-attachments/assets/22eae376-653a-4186-86a5-151345483ec8" />
+</p>
 
-## Overview
-VM-XCtrl maps the X-Touch’s **faders, buttons, encoders, and scribble displays** directly to Voicemeeter’s parameters.  
-You get hands-on mixing, real-time feedback, and advanced features like AUX (send) control, preset recall, and media transport — all from your X-Touch.
+<p align="center">
+  <strong>VoiceMeeter X-Touch Control Bridge</strong><br>
+  Turn your Behringer X-Touch into a complete VoiceMeeter and Windows mixing console.
+</p>
 
-A key advantage is that you can run the X-Touch in **XCtrl/MCU mode**, keeping **Voicemeeter** on one layer and your **DAW or other software** on another, easily switched via the **SMPTE** button.
+<p align="center">
+  <a href="https://github.com/vchaudio/VM-XCtrl/releases"><img src="https://img.shields.io/github/v/release/vchaudio/VM-XCtrl?style=for-the-badge&label=Release&labelColor=172B3A&color=FF5A1F&logo=github&logoColor=white"></a>
+  <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-FF5A1F?style=for-the-badge&logo=windows&logoColor=white&labelColor=172B3A">
+  <img src="https://img.shields.io/badge/Connection-LAN-3D8BC9?style=for-the-badge&labelColor=172B3A">
+  <img src="https://img.shields.io/badge/License-EULA-FF5A1F?style=for-the-badge&labelColor=172B3A">
+</p>
 
-## Features
-- Two main layers:  
-  - **Input Layer** controls Voicemeeter strips (channels)  
-  - **Output Layer** controls buses  
-  Switch seamlessly between them.  
-- **9 faders total:** 8 channel faders + 1 master fader on the Input layer.  
-- **Full channel metering bars:** real-time LED meters synced to Voicemeeter levels.  
-- **Dynamic scribble strips:**  
-  - Line 1 shows channel labels  
-  - Line 2 shows labels or live gain values (in dB) when touching a fader  
-  - Distinct color palettes for Input, Output, and AUX layers.  
-- **Button feedback:** Mute, Solo, Mono, and M.C toggles mirror Voicemeeter’s state with LED feedback.  
-- **AUX (Send) layer:**  
-  - Accessed by selecting a channel  
-  - Control send levels for A1–A5 and B1–B3  
-  - Displays indicate active buses with color feedback  
-  - Dedicated RECORD buttons toggle sends  
-  - Meters show input gain for the selected channel and relative levels for active sends  
-- **Preset recall:** F1–F8 keys instantly recall Voicemeeter presets with LED feedback.  
-- **Media transport controls:** Play, pause, next, and previous buttons send OS-level media keys, with illuminated LEDs to indicate playback state.  
-- **Reliable communication:**  
-  - Robust UDP handshake and keep-alive between X-Touch and VM-XCtrl  
-  - Automatic connection loss detection and recovery  
-  - “DISCONNECTED API” layer appears when Voicemeeter is offline, returning automatically once reconnected  
-- **FLIP button:** toggles fader mode (Absolute / Relative).  
-- **Solo feedback:** when a channel is soloed, other mute LEDs blink — identical to Voicemeeter’s visual behavior.  
-- **Layer display:** in single XCtrl mode, the display shows the current layer name (Bars, Beats, Subdivision, or Ticks fields repurposed).
+<p align="center">
+  <strong>Requirements:</strong><br>
+  Windows 10/11 · VoiceMeeter Potato or Banana · Behringer X-Touch · LAN connection
+</p>
 
-## Video Preview
 
-[![Video Preview](https://img.youtube.com/vi/OcrzrS9EKOE/0.jpg)](https://www.youtube.com/watch?v=OcrzrS9EKOE)
+## 📦 What is VM-XCtrl?
+>[!NOTE]
+>VM-XCtrl is a native Windows application that connects **VoiceMeeter Potato / Banana** with the **Behringer X-Touch** over LAN.
+It communicates directly with the VoiceMeeter API and translates its controls and state into the **XCtrl protocol**.
+The entire X-Touch layout is purpose-built for VoiceMeeter. No MIDI mapping, button assignment, or manual control setup is required.
+The result is a ready-to-use **hardware mixing console for Windows**, combining VoiceMeeter mixing, Windows application control, media control, and hardware routing on a single X-Touch.
 
-## Requirements
-- **VB-Audio Voicemeeter** (Potato - 3.1.1.9 / Banana - 2.1.1.9 / or higher)  
-- **Behringer X-Touch** (XCtrl / XCtrl-MCU / XCtrl-HUI mode)  
-- **UDP network access** — PC and X-Touch must be on the same local network
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=OcrzrS9EKOE">
+    <img src="https://img.shields.io/badge/▶%20Presentation Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
+  </a>
+</p>
 
-## Getting Started
-1. Connect your **Behringer X-Touch** in **XCtrl** mode.  
-2. Launch **Voicemeeter** and ensure the API is enabled.  
-3. Run **VM-XCtrl** — it will automatically detect and connect.
-4. Assign X-Touch IP
-5. Assign PC IP on X-Touch (hover your mouse on the tray icon, it will show you your IP)
-6. Control Voicemeeter directly from your X-Touch.
+## 📚 Table of Contents
+- [X-Touch Modes](#-x-touch-modes)
+- [Features](#%EF%B8%8F-features)
+  - [INPUT Layer](#%EF%B8%8F-features)
+  - [OUTPUT Layer](#%EF%B8%8F-features)
+  - [SEND Layer](#%EF%B8%8F-features)
+  - [APPs Layer](#%EF%B8%8F-features)
+- [Additional Features](#-additional-features)
+  -  [VoiceMeeter Presets](#%EF%B8%8F-voicemeeter-presets)
+  -  [Main Fader](#%EF%B8%8F-main-fader)
+  -  [XTouch Display VU](#-x-touch-display--vu)
+  -  [Transport Media Controls](#-transport--media-control)
+  -  [Pedal Support](#%EF%B8%8F-pedal-support-xctrl-only)
+  -  [XCTRL mode exclusives](#--)
+- [Get Started](#%EF%B8%8F-get-started)
+- [Requirements](#-requirements)
+- [Future Expansion](#-future-expansion)
+- [License](#-license)
+- [Community](#-community)
+
+
+## 🔩 X-Touch Modes
+VM-XCtrl supports three X-Touch operating modes:
+- **XCtrl**
+- **XCtrl / Mackie**
+- **XCtrl / HUI**
+
+>[!WARNING]
+>**Some functionality is exclusive to XCtrl mode due to hardware limiting capabilities**
+
+---
+
+## 🏷️ Features
+VM-XCtrl is built around a multi-layer mixing workflow
+
+<table width="100%" cellpadding="18">
+  <tr>
+    <td width="50%" valign="top">
+    </br>
+      <p align="center">
+        <img src="https://img.shields.io/badge/INPUT-22C55E?style=for-the-badge&labelColor=172B3A">
+      </p>
+      <ul>
+        <li>Mute, Solo, Volume and Mono controls</li>
+        <li>Switch inputs to the Extension Inputs using the REC button</li>
+        <li>Motorized faders with two-way feedback</li>
+        <li>Input names and dynamic volume values on the X-Touch display</li>
+        <li><strong>SELECT</strong> marks the input bus used by the SEND layer</li>
+      </ul>
+  </br>
+    </td>
+    <td width="50%" valign="top">
+      </br>
+      <p align="center">
+        <img src="https://img.shields.io/badge/OUTPUT-38BDF8?style=for-the-badge&labelColor=172B3A">
+      </p>
+      <ul>
+        <li>Mute, Solo, Volume and Mono controls</li>
+        <li><strong>SELECT</strong> directly selects the VoiceMeeter bus through the VoiceMeeter API</li>
+        <li>Select A1–B3 as the active destination for mixing</li>
+        <li>Return to INPUT and build a custom mix for the selected bus</li>
+        <li>Motorized faders and display feedback</li>
+      </ul>
+  </br>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      </br>
+      <p align="center">
+        <img src="https://img.shields.io/badge/SEND-EF4444?style=for-the-badge&labelColor=172B3A">
+      </p>
+      <ul>
+        <li>Assign input sends to VoiceMeeter outputs</li>
+        <li>Adjust send amount directly with the fader</li>
+        <li><strong>Main Fader</strong> can control all sends</li>
+        <li><strong>Absolute</strong> and <strong>Relative</strong> send modes</li>
+        <li><strong>FLIP</strong> switches between modes, matching native VoiceMeeter behavior</li>
+      </ul>
+  </br>
+    </td>
+    <td width="50%" valign="top">
+      </br>
+      <p align="center">
+        <img src="https://img.shields.io/badge/APPS-FACC15?style=for-the-badge&labelColor=172B3A">
+      </p>
+      <ul>
+        <li>Dedicated Windows Application Layer, independent from the VoiceMeeter API</li>
+        <li>Dynamically detects active Windows applications with audio</li>
+        <li>Mute, Volume and percentage control</li>
+        <li>Change output devices globally/default or per application in real time</li>
+        <li><strong>Instant</strong> or <strong>Confirm</strong> device switching modes</li>
+        <li>Short and full device names, with customizable short names for active or disconnected devices</li>
+      </ul>
+  </br>
+    </td>
+  </tr>
+</table>
+
+## ⚡ Additional Features
+
+<table width="100%" cellpadding="18">
+  <tr>
+    <td width="100%" valign="top">
+
+### 🗃️ VoiceMeeter Presets
+
+- **F1–F8** recall VoiceMeeter presets directly from the X-Touch.
+
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top">
+
+### 🎚️ Main Fader
+
+- The 9th / Main Fader can be reassigned in real time with `ALT + <Channel>` On the SEND layer, it can control either the selected input send or the overall send level. It can also be disabled on the OUTPUT layer when not needed.
+
+  </tr>
+  <tr>
+    <td width="100%" valign="top">
+
+### 🎨 X-Touch Display & VU
+
+- Customize screen colors for each VM-XCtrl layer.
+- Display channel names and live volume values.
+- Configurable VU meter response speed.
+- Channels can be fully or partially disabled when the corresponding VoiceMeeter input or bus has no custom label, similar to VoiceMeeter Streamer View.
+
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top">
+
+### 📻 Transport & Media Control
+
+- The X-Touch transport controls provide Windows multimedia control:
+  - **Previous · Next · Stop · Play**
+- ❗ In **XCtrl / Mackie** and **XCtrl / HUI**, these controls are located in the **AUTOMATION** section
+
+  </tr>
+  <tr>
+    <td width="100%" valign="top">
+
+### 🕹️ Pedal Support (XCtrl only)
+- VM-XCtrl supports all three X-Touch pedal inputs:
+  - **2 × Footswitch**
+  - **1 × Expression**
+  
+- Footswitches can mute any VoiceMeeter bus or duplicate any X-Touch button.
+  The Expression pedal can control any bus volume or the Main Fader.
+  An optional overlay can appear above all windows and show what the pedal is doing, for example when a microphone is muted or unmuted
+  
+  </tr>
+  <tr>
+    <td width="100%" valign="top">
+
+### <p align="center"> <img src="https://img.shields.io/badge/XCtrl-Exclusive%20ONLY-FF5A1F?style=for-the-badge&labelColor=172B3A"> </p>
+
+- XCtrl mode provides additional functionality built specifically around the X-Touch hardware.
+  - **TIMECODE** displays the current media position and active VM-XCtrl layer.
+  - **JOG** wheel scrubs through music, video and audio by seconds.
+  - **NUDGE + JOG** allows quick 5–10 second video jumps, similar to `J` / `K` in YouTube.
+  - Multiple media capture modes are available, including classic Windows media targeting and **FOCUS** mode.
+  - In FOCUS mode, pressing **SOLO** can force media control to the currently focused window.
+
+    </td>
+  </tr>
+</table>
+
+## ⚙️ Get Started
+
+>* Connect the **X-Touch** to your local network using an Ethernet cable
+>* Power it on while holding the **Select** button on **channel 1**
+>* Choose mode **XCtrl** or **XCtrl/Mackie**
+>   * _Note: Some features are not supported in XCtrl/Mackie mode — you can change this later in Settings_
+>* In the **IFC** field, select **Network**
+>* In the **Network** field, select **Slv IP**
+>* Enter your computer **IP** address
+>* Press **Select** to apply the settings
+>* After a moment, the IP field on the X-Touch will show its address — enter that address in the field above
+>   * _Note: It is recommended to reserve / assign a permanent IP for the X-Touch in your router (DHCP reservation), so the address does not change after the surface is powered off_
+>* Select the same mode you set on the X-Touch for full compatibility
+
+## 💎 Advantages
+
+VM-XCtrl is designed as a preconfigured, ready-to-work application rather than a collection of manual mappings.
+
+- Automatic connection and reconnection when VoiceMeeter or the X-Touch is restarted.
+- Connection state is reflected on the X-Touch.
+- Windows autostart and automatic updates.
+- Console and function customization.
+- Left-clicking the tray icon provides VM-XCtrl status information.
+- Automatic support for future compatible VoiceMeeter releases.
+
+## 🔐 Requirements
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-FF5A1F?style=for-the-badge&logo=windows&logoColor=white&labelColor=172B3A">
+  <img src="https://img.shields.io/badge/VoiceMeeter-Potato%20%7C%20Banana-3D8BC9?style=for-the-badge&labelColor=172B3A">
+  <img src="https://img.shields.io/badge/X--Touch-FULL-FF5A1F?style=for-the-badge&labelColor=172B3A">
+  <img src="https://img.shields.io/badge/Connection-LAN-3D8BC9?style=for-the-badge&labelColor=172B3A">
+</p>
+
+>[!TIP]
+>- Windows 10 / 11
+>- VoiceMeeter Potato 3.1.1.9+ / VoiceMeeter Banana 2.1.1.9+ or higher
+>- Behringer X-Touch Full **(X-Touch Compact and Extender are not supported)**
+>- LAN connection between the PC and X-Touch
+
+>⚠️ USB connection **is not currently supported**
+
+## 💫 Future Expansion
+>[!WARNING]
+>The current **VM-XCtrl CORE** will continue to expand with additional functionality.
+Larger future features may also be released as separate paid add-ons when they **EXTEND VM-XCtrl beyond direct VoiceMeeter** operation.
+
+## 📋 License
+
+VM-XCtrl is distributed under its own EULA.
+You can evaluate the program during a 7-day free trial mode
+
+<p align="center">
+  <a href="https://vchaudio.gumroad.com/l/VM-XCtrl">
+    <img src="https://img.shields.io/badge/Get%20a%20License-22C55E?style=for-the-badge&labelColor=172B3A">
+  </a>
+</p>
+
+## 📌 Community
+
+<p align="center">
+  <a href="https://discord.gg/TxMyxPkBxw">
+    <img src="https://img.shields.io/badge/Join%20the%20VM--XCtrl%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
+  </a>
+</p>

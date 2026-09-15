@@ -206,7 +206,7 @@ VM-XCtrl is built around a multi-layer mixing workflow
 </table>
 
 ## ⚙️ Get Started
-
+>[!TIP]
 >* Connect the **X-Touch** to your local network using an Ethernet cable
 >* Power it on while holding the **Select** button on **channel 1**
 >* Choose mode **XCtrl** or **XCtrl/Mackie**

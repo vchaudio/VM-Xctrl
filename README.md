@@ -12,20 +12,20 @@
 <p align="center">
   <a href="https://github.com/vchaudio/VM-XCtrl/releases"><img src="https://img.shields.io/github/v/release/vchaudio/VM-XCtrl?style=for-the-badge&label=Release&labelColor=172B3A&color=FF5A1F&logo=github&logoColor=white"></a>
   <a href="#-requirements"><img src="https://img.shields.io/badge/Windows-10%20%7C%2011-FF5A1F?style=for-the-badge&logo=windows&logoColor=white&labelColor=172B3A"></a>
-  <a href="#-requirements"><img src="https://img.shields.io/badge/Connection-LAN-3D8BC9?style=for-the-badge&labelColor=172B3A"></a>
+  <a href="#-requirements"><img src="https://img.shields.io/badge/Connection-LAN%20%7C%20USB%20%7C%20MIDI-3D8BC9?style=for-the-badge&labelColor=172B3A"></a>
   <a href="#-license"><img src="https://img.shields.io/badge/License-Proprietary%20%2F%20Commercial-FACC15?style=for-the-badge&labelColor=172B3A"></a>
 </p>
 
 <p align="center">
   <strong>Requirements:</strong><br>
-  Windows 10/11 · VoiceMeeter Potato or Banana · Behringer X-Touch · LAN connection
+  Windows 10/11 · VoiceMeeter Potato or Banana · Behringer X-Touch · LAN/USB/MIDI connection
 </p>
 
 
 ## 📦 What is VM-XCtrl?
 >[!NOTE]
->VM-XCtrl is a native Windows application that connects **VoiceMeeter Potato / Banana** with the **Behringer X-Touch** over LAN.
-It communicates directly with the VoiceMeeter API and translates its controls and state into the **XCtrl protocol**.
+>VM-XCtrl is a native Windows application that connects **VoiceMeeter Potato / Banana** with the **Behringer X-Touch** over LAN, MIDI, and USB.
+It communicates directly with the VoiceMeeter API and translates its controls and state into the **XCtrl or Mackie protocol**.
 The entire X-Touch layout is purpose-built for VoiceMeeter. No MIDI mapping, button assignment, or manual control setup is required.
 The result is a ready-to-use **hardware mixing console for Windows**, combining VoiceMeeter mixing, Windows application control, media control, and hardware routing on a single X-Touch.
 
@@ -47,7 +47,7 @@ The result is a ready-to-use **hardware mixing console for Windows**, combining 
   -  [Main Fader](#%EF%B8%8F-main-fader)
   -  [XTouch Display VU](#-x-touch-display--vu)
   -  [Transport Media Controls](#-transport--media-control)
-  -  [Pedal Support](#%EF%B8%8F-pedal-support-xctrl-only)
+  -  [Pedal Support](#%EF%B8%8F-pedal-support-xctrl-and-mackie-only)
   -  [XCTRL mode exclusives](#--)
 - [Get Started](#%EF%B8%8F-get-started)
 - [Requirements](#-requirements)
@@ -57,13 +57,16 @@ The result is a ready-to-use **hardware mixing console for Windows**, combining 
 
 
 ## 🔩 X-Touch Modes
-VM-XCtrl supports three X-Touch operating modes:
-- **XCtrl**
-- **XCtrl / Mackie**
-- **XCtrl / HUI**
+VM-XCtrl supports several X-Touch operating modes in LAN/USB/MIDI:
+| Mode | Connection |
+|---|---|
+| **XCtrl** | LAN / MIDI |
+| **XCtrl/Mackie** | LAN / MIDI |
+| **XCtrl/HUI** | LAN / MIDI |
+| **Mackie** | USB / MIDI |
 
 >[!WARNING]
->**Some functionality is exclusive to XCtrl mode due to hardware limitations**
+> **Some functionality is unavailable in XCtrl/Mackie and XCtrl/HUI modes due to hardware limitations.**
 
 ---
 
@@ -172,14 +175,14 @@ VM-XCtrl is built around a multi-layer mixing workflow
 
 - The X-Touch transport controls provide Windows multimedia control:
   - **Previous · Next · Stop · Play**
-- ❗ In **XCtrl / Mackie** and **XCtrl / HUI**, these controls are located in the **AUTOMATION** section
+- ❗ In **XCtrl/Mackie** and **XCtrl/HUI**, these controls are located in the **AUTOMATION** section
   - **Touch · Latch · Write · Read/Off**
 >
   </tr>
   <tr>
     <td width="100%" valign="top">
 
-### 🕹️ Pedal Support (XCtrl only)
+### 🕹️ Pedal Support (XCtrl and Mackie only)
 - VM-XCtrl supports all three X-Touch pedal inputs:
   - **2 × Footswitch**
   - **1 × Expression**
@@ -192,7 +195,7 @@ VM-XCtrl is built around a multi-layer mixing workflow
   <tr>
     <td width="100%" valign="top">
 
-### <p align="center"> <img src="https://img.shields.io/badge/XCtrl-Exclusive%20ONLY-FF5A1F?style=for-the-badge&labelColor=172B3A"> </p>
+### <p align="center"> <img src="https://img.shields.io/badge/XCtrl and Mackie-Exclusive%20ONLY-FF5A1F?style=for-the-badge&labelColor=172B3A"> </p>
 
 - XCtrl mode provides additional functionality built specifically around the X-Touch hardware.
   - **TIMECODE** displays the current media position and active VM-XCtrl layer.
@@ -206,6 +209,7 @@ VM-XCtrl is built around a multi-layer mixing workflow
 </table>
 
 ## ⚙️ Get Started
+### Network-LAN connection
 >[!TIP]
 >* Connect the **X-Touch** to your local network using an Ethernet cable
 >* Power it on while holding the **Select** button on **channel 1**
@@ -217,6 +221,15 @@ VM-XCtrl is built around a multi-layer mixing workflow
 >* Press **Select** to apply the settings
 >* After a moment, the IP field on the X-Touch will show its address — enter that address in the field above
 >   * _Note: It is recommended to reserve / assign a permanent IP for the X-Touch in your router (DHCP reservation), so the address does not change after the surface is powered off_
+>* Select the same mode you set on the X-Touch for full compatibility
+### USB/MIDI connection
+>[!TIP]
+>* Connect the **X-Touch** to your PC via USB cable or to your audio interface or related device via MIDI cable
+>* Power it on while holding the **Select** button on **channel 1**
+>* Choose mode **XCtrl** or **Mackie**
+>* In the **IFC** field, select **USB** or **MIDI**
+>* Press **Select** to apply the settings
+>* After a moment, pick MIDI Input and MIDI Output devices (X-Touch by USB)
 >* Select the same mode you set on the X-Touch for full compatibility
 
 ## 💎 Advantages
@@ -236,16 +249,14 @@ VM-XCtrl is designed as a preconfigured, ready-to-work application rather than a
   <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-FF5A1F?style=for-the-badge&logo=windows&logoColor=white&labelColor=172B3A">
   <img src="https://img.shields.io/badge/VoiceMeeter-Potato%20%7C%20Banana-3D8BC9?style=for-the-badge&labelColor=172B3A">
   <img src="https://img.shields.io/badge/X--Touch-FULL-FF5A1F?style=for-the-badge&labelColor=172B3A">
-  <img src="https://img.shields.io/badge/Connection-LAN-3D8BC9?style=for-the-badge&labelColor=172B3A">
+  <img src="https://img.shields.io/badge/Connection-LAN%20%7C%20USB%20%7C%20MIDI-3D8BC9?style=for-the-badge&labelColor=172B3A">
 </p>
 
 >[!NOTE]
 >- Windows 10 / 11
 >- VoiceMeeter Potato 3.1.1.9+ / VoiceMeeter Banana 2.1.1.9+ or higher
 >- Behringer X-Touch Full **(X-Touch Compact and Extender are not supported)**
->- LAN connection between the PC and X-Touch
-
->⚠️ USB connection **is not currently supported**
+>- LAN connection between the PC and X-Touch, or X-Touch connected to the PC over USB or MIDI
 
 ## 💫 Future Expansion
 >[!WARNING]

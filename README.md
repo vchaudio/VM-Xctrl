@@ -64,9 +64,11 @@ VM-XCtrl supports several X-Touch operating modes in LAN/USB/MIDI:
 | **XCtrl/Mackie** | LAN / MIDI |
 | **XCtrl/HUI** | LAN / MIDI |
 | **Mackie** | USB / MIDI |
-
 >[!WARNING]
-> **Some functionality is unavailable in XCtrl/Mackie and XCtrl/HUI modes due to hardware limitations.**
+> **Some functionality is unavailable in XCtrl/Mackie and XCtrl/HUI modes due to hardware limitations**
+
+> [!IMPORTANT]
+> **Scribble Strips INVERTED colors aren't supported in Mackie mode**
 
 ---
 

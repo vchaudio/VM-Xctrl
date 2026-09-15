@@ -239,7 +239,7 @@ VM-XCtrl is designed as a preconfigured, ready-to-work application rather than a
   <img src="https://img.shields.io/badge/Connection-LAN-3D8BC9?style=for-the-badge&labelColor=172B3A">
 </p>
 
->[!TIP]
+>[!NOTE]
 >- Windows 10 / 11
 >- VoiceMeeter Potato 3.1.1.9+ / VoiceMeeter Banana 2.1.1.9+ or higher
 >- Behringer X-Touch Full **(X-Touch Compact and Extender are not supported)**

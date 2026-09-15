@@ -13,7 +13,7 @@
   <a href="https://github.com/vchaudio/VM-XCtrl/releases"><img src="https://img.shields.io/github/v/release/vchaudio/VM-XCtrl?style=for-the-badge&label=Release&labelColor=172B3A&color=FF5A1F&logo=github&logoColor=white"></a>
   <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-FF5A1F?style=for-the-badge&logo=windows&logoColor=white&labelColor=172B3A">
   <img src="https://img.shields.io/badge/Connection-LAN-3D8BC9?style=for-the-badge&labelColor=172B3A">
-  <img src="https://img.shields.io/badge/License-EULA-FF5A1F?style=for-the-badge&labelColor=172B3A">
+  <img src="https://img.shields.io/badge/License-Proprietary%20%2F%20Commercial-FF5A1F?style=for-the-badge&labelColor=172B3A">
 </p>
 
 <p align="center">
@@ -255,13 +255,16 @@ Larger future features may also be released as separate paid add-ons when they *
 ## 📋 License
 
 VM-XCtrl is distributed under its own EULA.
-You can evaluate the program during a 7-day free trial mode
+You can evaluate the program during a 7-day free trial period.
+
+[**EULA**](./docs/EULA.md) · [**Privacy Policy**](./docs/PRIVACY_POLICY.md) · [**Terms of Sale**](./docs/TERMS_OF_SALE.md)
 
 <p align="center">
   <a href="https://vchaudio.gumroad.com/l/VM-XCtrl">
     <img src="https://img.shields.io/badge/Get%20a%20License-22C55E?style=for-the-badge&labelColor=172B3A">
   </a>
 </p>
+
 
 ## 📌 Community
 

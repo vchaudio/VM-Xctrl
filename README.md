@@ -11,8 +11,8 @@
 
 <p align="center">
   <a href="https://github.com/vchaudio/VM-XCtrl/releases"><img src="https://img.shields.io/github/v/release/vchaudio/VM-XCtrl?style=for-the-badge&label=Release&labelColor=172B3A&color=FF5A1F&logo=github&logoColor=white"></a>
-  <a href="#-requirements"><img src="https://img.shields.io/badge/Windows-10%20%7C%2011-FF5A1F?style=for-the-badge&logo=windows&logoColor=white&labelColor=172B3A"></a>
-  <a href="#-requirements"><img src="https://img.shields.io/badge/Connection-LAN%20%7C%20USB%20%7C%20MIDI-3D8BC9?style=for-the-badge&labelColor=172B3A"></a>
+  <a href="#-requirements"><img src="https://img.shields.io/badge/Windows-10%20%7C%2011-1976D3?style=for-the-badge&logo=windows&logoColor=white&labelColor=172B3A"></a>
+  <a href="#-requirements"><img src="https://img.shields.io/badge/Connection-LAN%20%7C%20USB%20%7C%20MIDI-19765D?style=for-the-badge&labelColor=172B3A"></a>
   <a href="#-license"><img src="https://img.shields.io/badge/License-Proprietary%20%2F%20Commercial-FACC15?style=for-the-badge&labelColor=172B3A"></a>
 </p>
 
@@ -248,10 +248,10 @@ VM-XCtrl is designed as a preconfigured, ready-to-work application rather than a
 ## 🔐 Requirements
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-FF5A1F?style=for-the-badge&logo=windows&logoColor=white&labelColor=172B3A">
-  <img src="https://img.shields.io/badge/VoiceMeeter-Potato%20%7C%20Banana-3D8BC9?style=for-the-badge&labelColor=172B3A">
-  <img src="https://img.shields.io/badge/X--Touch-FULL-FF5A1F?style=for-the-badge&labelColor=172B3A">
-  <img src="https://img.shields.io/badge/Connection-LAN%20%7C%20USB%20%7C%20MIDI-3D8BC9?style=for-the-badge&labelColor=172B3A">
+  <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-1976D3?style=for-the-badge&logo=windows&logoColor=white&labelColor=172B3A">
+  <img src="https://img.shields.io/badge/VoiceMeeter-Potato%20%7C%20Banana-385165?style=for-the-badge&labelColor=FF4B1A">
+  <img src="https://img.shields.io/badge/X--Touch-FULL-FDBB33?style=for-the-badge&labelColor=172B3A">
+  <img src="https://img.shields.io/badge/Connection-LAN%20%7C%20USB%20%7C%20MIDI-19765D?style=for-the-badge&labelColor=172B3A">
 </p>
 
 >[!NOTE]

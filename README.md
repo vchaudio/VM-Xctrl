@@ -75,21 +75,23 @@ VM-XCtrl supports several X-Touch operating modes in LAN/USB/MIDI:
 ## 🏷️ Features
 VM-XCtrl is built around a multi-layer mixing workflow
 
+<h3 align="center">🗂️ LAYERS</h3>
+
 <table width="100%" cellpadding="18">
   <tr>
     <td width="50%" valign="top">
-    </br>
+      </br>
       <p align="center">
         <img src="https://img.shields.io/badge/INPUT-22C55E?style=for-the-badge&labelColor=172B3A">
       </p>
       <ul>
-        <li>Mute, Solo, Volume and Mono controls</li>
+        <li>Mute, Solo, Volume and Mono / Karaoke (In-7) controls</li>
         <li>Switch inputs to the Extension Inputs using the REC button</li>
         <li>Motorized faders with two-way feedback</li>
         <li>Input names and dynamic volume values on the X-Touch display</li>
         <li><strong>SELECT</strong> marks the input bus used by the SEND layer</li>
       </ul>
-  </br>
+      </br>
     </td>
     <td width="50%" valign="top">
       </br>
@@ -103,7 +105,7 @@ VM-XCtrl is built around a multi-layer mixing workflow
         <li>Return to INPUT and build a custom mix for the selected bus</li>
         <li>Motorized faders and display feedback</li>
       </ul>
-  </br>
+      </br>
     </td>
   </tr>
   <tr>
@@ -118,7 +120,7 @@ VM-XCtrl is built around a multi-layer mixing workflow
         <li><strong>Main Fader</strong> can control all sends</li>
         <li><strong>FLIP</strong> switches between <strong>Absolute</strong> and <strong>Relative</strong> modes, matching native VoiceMeeter behavior</li>
       </ul>
-  </br>
+      </br>
     </td>
     <td width="50%" valign="top">
       </br>
@@ -129,11 +131,96 @@ VM-XCtrl is built around a multi-layer mixing workflow
         <li>Dedicated Windows Application Layer, independent from the VoiceMeeter API</li>
         <li>Dynamically detects active Windows applications</li>
         <li>Mute, Volume and percentage control</li>
-        <li>Change Default output device or per application in real time</li>
+        <li>Change Default output device or per-application in real time</li>
         <li><strong>Instant</strong> or <strong>Confirm</strong> output device switching modes</li>
         <li>Short and full device names, with customizable short names for active or disconnected devices</li>
       </ul>
-  </br>
+      </br>
+    </td>
+  </tr>
+<tr>
+  <td colspan="2" width="100%" valign="top">
+    </br>
+    <p align="center">
+      <img src="https://img.shields.io/badge/SETTINGS-9CA3AF?style=for-the-badge&labelColor=172B3A">
+    </p>
+    <p align="center">
+      <strong>Change VoiceMeeter settings directly from the X-Touch</strong>
+    </p>
+    <p align="center">
+      • ASIO Patch<br>
+      • Driver Buffer<br>
+      • Output Delay<br>
+      • Sample Rate<br>
+      • Composite and Insert Patch<br>
+      • Monitor Bus and Monitor Sel<br>
+      • Limiter In and Out Type (Yellow/Green)<br>
+      • FX (Reverb and Delay)<br>
+      • Restart Audio Engine<br>
+      • <b>Load and Save VoiceMeeter Configs</b>
+    </p>
+    </br>
+  </td>
+</tr>
+</table>
+
+<h3 align="center">🗃️ SUBLAYERS</h3>
+
+<table width="100%" cellpadding="18">
+  <tr>
+    <td width="50%" valign="top">
+      </br>
+      <p align="center">
+        <img src="https://img.shields.io/badge/EQUALIZER-8B5CF6?style=for-the-badge&labelColor=172B3A">
+      </p>
+      <p align="center">
+        <strong>Equalizer</strong> <em>[EQ]</em>
+      </p>
+      </br>
+    </td>
+    <td width="50%" valign="top">
+      </br>
+      <p align="center">
+        <img src="https://img.shields.io/badge/PLUGINS-F97316?style=for-the-badge&labelColor=172B3A">
+      </p>
+      <p align="center">
+        <strong>Plugins</strong> — Gate, Compressor, Denoiser, Limiter, Reverb, Delay, Modes <em>[PLUG-IN]</em>
+      </p>
+      </br>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      </br>
+      <p align="center">
+        <img src="https://img.shields.io/badge/PANORAMA%20%2F%20EFFECTS-06B6D4?style=for-the-badge&labelColor=172B3A">
+      </p>
+      <p align="center">
+        <strong>Panorama / Effects</strong> <em>[PAN/SURROUND]</em>
+      </p>
+      </br>
+    </td>
+    <td width="50%" valign="top">
+      </br>
+      <p align="center">
+        <img src="https://img.shields.io/badge/SELECT%20DEVICE-14B8A6?style=for-the-badge&labelColor=172B3A">
+      </p>
+      <p align="center">
+        <strong>Select Input/Output Device</strong> — assign your mic or output device on the fly, including ASIO patching <em>[TRACK]</em>
+      </p>
+      </br>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" width="100%" valign="top">
+      </br>
+      <p align="center">
+        <img src="https://img.shields.io/badge/RECORDER-EC4899?style=for-the-badge&labelColor=172B3A">
+      </p>
+      <p align="center">
+        <strong>Recorder</strong> — full VoiceMeeter Recorder integration <em>[INST]</em>
+      </p>
+      </br>
     </td>
   </tr>
 </table>
@@ -146,7 +233,8 @@ VM-XCtrl is built around a multi-layer mixing workflow
 
 ### 🗃️ VoiceMeeter Presets
 
-- **F1–F8** recall VoiceMeeter presets directly from the X-Touch.
+- **F1–F8** recall VoiceMeeter presets directly from the X-Touch
+- **Save a new or overwrite an existing** preset by pressing SAVE, then select an **F1–F8** slot.
 
     </td>
   </tr>
@@ -195,6 +283,15 @@ VM-XCtrl is built around a multi-layer mixing workflow
   
   </tr>
   <tr>
+
+    <td width="100%" valign="top">
+
+### 🖥️ VoiceMeeter Window Control
+- Press **ENTER** to open the VoiceMeeter window and press again to minimize it to taskbar / tray
+  
+  </tr>
+  <tr>
+    
     <td width="100%" valign="top">
 
 ### <p align="center"> <img src="https://img.shields.io/badge/XCtrl and Mackie-Exclusive%20ONLY-FF5A1F?style=for-the-badge&labelColor=172B3A"> </p>
